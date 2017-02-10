@@ -1,0 +1,9 @@
+{
+	"name":"Nobrain",
+	"version":"1.0.0",
+	"description":"No brain, only skill",
+	"author":"Boris Gorzelniaski <boris@slav.rocks>",
+	"scripts":{
+		"start":"node app.js"
+	}
+}

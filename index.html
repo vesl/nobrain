@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="socket.io/socket.io.js"></script>
+		<script src="js/socket.io.events.js"></script>
+		<script src="js/polyfill.min.js"></script>
+		<script src="js/speak.js"></script>
+		<script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+		<script type="text/javascript">
+		function jc(){
+			if(jcena.volume==0) {
+				jcena.volume=1;
+				$('#jc').html('<img src="https://media.giphy.com/media/3oEjHNqpza4gOabdfy/giphy.gif"></img>');
+			}
+			else {
+				jcena.volume=0;
+				$('#jc').html('');
+			}
+		}
+                function sd(){
+                        if(sdog.volume==0) {
+                                sdog.volume=1;
+                                $('#sd').html('<img src="files/sd.gif"></img>');
+                        }
+                        else {
+                                sdog.volume=0;
+                                $('#sd').html('');
+                        }
+                }
+		</script>
+	</head>
+	<body>
+		<h1>Alertes support</h1>
+		<script type="text/javascript">
+			speak('alertes vocales  du support activai');
+		</script>
+		<button onclick="jc();">JC</button>
+		<div id="jc"></div>
+                <button onclick="sd();">SD</button>
+                <div id="sd"></div>
+	</body>
+</html>
